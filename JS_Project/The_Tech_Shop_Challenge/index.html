@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <header class="header">
+        <h1>Komputer Store</h1>
+    </header>
+
+    <main class="container">
+        <!-- Bank Section -->
+        <section class="card" id="bank-section">
+            <h2>Joe Banker</h2>
+            <div class="row">
+                <span>Bank balance:</span>
+                <span id="bank-balance">0</span>
+            </div>
+            <div class="row loan-row" id="loan-row" style="display:none;">
+                <span>Outstanding loan:</span>
+                <span id="loan-amount">0</span>
+            </div>
+            <br><br><br>
+            <button id="get-loan-btn">Get a loan</button>
+        </section>
+
+        <!-- Work Section -->
+        <section class="card" id="work-section">
+            <h2>Work</h2>
+            <div class="row">
+                <span>Pay:</span>
+                <span id="pay-balance">0</span>
+            </div>
+            <br><br><br>
+            <div class="work-buttons">
+                <button id="bank-pay-btn">Bank</button>
+                <button id="work-btn">Work</button>
+                <button id="repay-loan-btn" style="display:none;">Repay Loan</button>
+            </div>
+        </section>
+
+        <!-- Laptop Selection Section -->
+        <section class="card" id="laptop-select-section">
+            <h2>Laptops</h2>
+            <label for="laptop-select">Choose a laptop:</label>
+            <select id="laptop-select"></select>
+                <h4>Features:</h4>
+                <ul id="features-list"></ul>
+            
+            </section>
+    </main>
+    <!-- Laptop Info Section -->
+    <main class="container">
+        <section class="card" id="laptop-info-section">
+            <h2>Laptop Information</h2>
+            <div class="laptop-info">
+                <img id="laptop-image" alt="Laptop image">
+                <div class="laptop-text">
+                    <h3 id="laptop-title">Select a laptop</h3>
+                    <p id="laptop-description"></p>
+                    <p class="price-label">Price: <span id="laptop-price">0</span></p>
+                    <br>
+                    <button id="buy-now-btn">Buy Now</button>
+                </div>
+            </div>
+            <p id="message" class="message"></p>
+        </section>
+    </main>
+
+     
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
